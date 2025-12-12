@@ -11,8 +11,6 @@ This repository demonstrates how to work with the Node.js runtime beyond the bro
 
 Designed as a practical project, structured and documented to showcase **backend and developer tooling skills**.
 
----
-
 ## 🚀 Features
 
 - 📂 Create, read, and write files using Node.js
@@ -21,8 +19,6 @@ Designed as a practical project, structured and documented to showcase **backend
 - 🚪 Automatically opens the browser when a new note is added
 - 🧪 Basic automated tests with Jest
 - 📦 Uses modern **ES Modules (ESM)**
-
----
 
 ## 🛠️ Tech Stack & Key Packages
 
@@ -37,8 +33,6 @@ Designed as a practical project, structured and documented to showcase **backend
 ### Native Node.js Modules Used
 - 📁 `fs` — File system operations
 - 🌐 `http` — Basic HTTP server
-
----
 
 ## 📦 Installation
 
@@ -55,8 +49,6 @@ To use the `note` command globally during development:
 ```bash
 npm link
 ```
-
----
 
 ## ▶️ Run the CLI
 
@@ -82,8 +74,6 @@ Launch the web interface to view notes:
 note web
 ```
 
----
-
 ### 📋 Available commands
 
 ```bash
@@ -104,8 +94,6 @@ Commands:
 note --help
 ```
 
----
-
 ## 🧪 Testing
 
 This project includes **basic unit tests** using **Jest**, configured to work with **Node.js ES Modules**:
@@ -113,8 +101,6 @@ This project includes **basic unit tests** using **Jest**, configured to work wi
 ```bash
 npm test
 ```
-
----
 
 ## 🎯 Skills Demonstrated
 
@@ -127,8 +113,6 @@ npm test
 - ✅ Writing and running unit tests with Jest
 - ✅ Understanding developer tooling & scripting
 
----
-
 ## 🎓 Course & Credential
 
 This project was built as part of:
@@ -137,8 +121,6 @@ This project was built as part of:
 
 📜 **Course Completion Credential:**  
 👉 https://static.frontendmasters.com/ud/c/dcb8516976/ehyaBEyiou/node-js-v3.pdf
-
----
 
 ## 👤 Author
 
