@@ -1,7 +1,14 @@
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs";
-import {newNote, getAllNotes, findNotes, removeNote, removeAllNotes} from "./notes.js";
+import {
+  newNote,
+  getAllNotes,
+  findNotes,
+  removeNote,
+  removeAllNotes,
+} from "./notes.js";
 import { listNotes } from "./utils.js";
+import {start} from "./server.js";
 
 yargs(hideBin(process.argv))
   .command(
@@ -14,7 +21,7 @@ yargs(hideBin(process.argv))
       });
     },
     async (argv) => {
-      const tags = argv.tags ? argv.tags.split(',') : []
+      const tags = argv.tags ? argv.tags.split(",") : [];
       const note = await newNote(argv.note, tags);
       console.log("New note added. ID: ", note.id);
     }
@@ -30,7 +37,7 @@ yargs(hideBin(process.argv))
     () => {},
     async (_) => {
       const notes = await getAllNotes();
-      listNotes(notes)
+      listNotes(notes);
     }
   )
   .command(
@@ -72,7 +79,10 @@ yargs(hideBin(process.argv))
         type: "number",
       });
     },
-    async (argv) => {}
+    async (argv) => {
+      const notes = await getAllNotes();
+      start(notes, argv.port);
+    }
   )
   .command(
     "clean",
